@@ -20,6 +20,22 @@ export const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!isLogin && name.trim().length < 2) {
+      toast.error('Please enter your name (at least 2 characters)');
+      return;
+    }
+    
+    if (email.trim().length === 0 || !email.includes('@')) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+    
+    if (password.length < 6) {
+      toast.error('Password must be at least 6 characters long');
+      return;
+    }
+    
     setLoading(true);
 
     try {

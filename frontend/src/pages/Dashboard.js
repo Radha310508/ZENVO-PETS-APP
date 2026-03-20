@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 import { motion } from 'framer-motion';
-import { Dog, FileText, TrendingUp, Bell, LogOut, Plus, Calendar } from 'lucide-react';
+import { Dog, FileText, TrendingUp, Bell, LogOut, Plus, Calendar, Share2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { format } from 'date-fns';
 
@@ -187,10 +187,18 @@ export const Dashboard = () => {
                       <button
                         data-testid={`view-insights-button-${pet.pet_id}`}
                         onClick={() => navigate(`/insights/${pet.pet_id}`)}
-                        className="flex-1 bg-slate-100 text-slate-700 py-2 rounded-full text-sm font-medium hover:bg-slate-200 transition-all btn-scale flex items-center justify-center gap-2"
+                        className="bg-slate-100 text-slate-700 py-2 px-3 rounded-full text-sm font-medium hover:bg-slate-200 transition-all btn-scale flex items-center justify-center gap-1"
                       >
                         <TrendingUp size={16} />
                         Insights
+                      </button>
+                      <button
+                        data-testid={`view-summary-button-${pet.pet_id}`}
+                        onClick={() => navigate(`/summary/${pet.pet_id}`)}
+                        className="bg-slate-100 text-slate-700 py-2 px-3 rounded-full text-sm font-medium hover:bg-slate-200 transition-all btn-scale"
+                        title="View Care Summary"
+                      >
+                        <Share2 size={16} />
                       </button>
                     </div>
                   </motion.div>

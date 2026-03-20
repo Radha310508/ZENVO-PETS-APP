@@ -1,0 +1,135 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "ZENVO PETS",
+      "tone": "Calm, Trustworthy, Organized, Non-Clinical",
+      "archetype": "Soft Utility",
+      "visual_style": "Minimalist, Card-based, Air-light"
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "accent": "Nunito, sans-serif"
+      },
+      "scale": {
+        "h1": "text-4xl font-bold tracking-tight md:text-5xl",
+        "h2": "text-3xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body_lg": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed text-slate-600",
+        "caption": "text-sm text-slate-500"
+      },
+      "usage": {
+        "headings": "Use Manrope for all section titles and key metrics. Keep letter-spacing tight.",
+        "body": "Use Inter for all long-form text, inputs, and logs. High legibility is key.",
+        "labels": "Use Uppercase with wide tracking for tiny labels (e.g., 'DATE', 'BREED')."
+      }
+    },
+    "colors": {
+      "palette": {
+        "brand": {
+          "primary": "#568EA3",
+          "secondary": "#E0F2FE",
+          "tertiary": "#F0F9FF"
+        },
+        "accent": {
+          "energy": "#FDBA74",
+          "success": "#86EFAC",
+          "warning": "#FDE047",
+          "error": "#FDA4AF"
+        },
+        "neutral": {
+          "bg_main": "#F8FAFC",
+          "bg_card": "#FFFFFF",
+          "text_primary": "#1E293B",
+          "text_secondary": "#64748B",
+          "border": "#E2E8F0"
+        }
+      },
+      "theme_mode": "light",
+      "rules": "Avoid gradients for backgrounds. Use solid soft colors. Use Primary color sparingly for CTAs."
+    },
+    "spacing": {
+      "container": "max-w-md mx-auto md:max-w-5xl",
+      "padding": {
+        "screen": "p-4 md:p-8",
+        "card": "p-6",
+        "section": "py-12"
+      },
+      "radius": {
+        "default": "rounded-2xl",
+        "button": "rounded-full",
+        "input": "rounded-xl"
+      }
+    },
+    "visual_enhancers": {
+      "shadows": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-shadow",
+      "borders": "border border-slate-100",
+      "glass": "bg-white/80 backdrop-blur-md border-white/20",
+      "textures": "Use subtle noise overlay on the Dashboard background if possible, but keep it clean."
+    },
+    "layout": {
+      "grid_strategy": "Mobile-first single column. On Desktop, use a 'Bento' grid for the dashboard (Sidebar + Main Content + Right Widget).",
+      "mobile_nav": "Bottom sticky navigation bar for mobile.",
+      "desktop_nav": "Top clean header or Left minimal sidebar."
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "page_load": "Fade in + Slide up (y: 20 -> 0)",
+      "interactions": "Scale down slightly on click (scale-95). Hover lifts slightly (-y-1)."
+    },
+    "accessibility": {
+      "contrast": "Ensure text is Slate-700 or darker on white backgrounds.",
+      "touch_targets": "Min 44px for all mobile interactions.",
+      "labels": "All inputs must have visible labels or aria-labels."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#568EA3] text-white hover:bg-[#4a7c8f] rounded-full px-6 py-3 font-medium shadow-sm active:scale-95 transition-transform",
+      "secondary": "bg-slate-100 text-slate-700 hover:bg-slate-200 rounded-full px-6 py-3 font-medium",
+      "ghost": "text-slate-500 hover:text-slate-800 hover:bg-slate-50 rounded-lg px-4 py-2"
+    },
+    "cards": {
+      "default": "bg-white rounded-2xl border border-slate-100 shadow-sm p-6",
+      "interactive": "cursor-pointer hover:border-[#568EA3]/30 transition-colors"
+    },
+    "inputs": {
+      "default": "bg-slate-50 border-transparent focus:border-[#568EA3] focus:bg-white rounded-xl h-12 px-4 transition-all"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_landing": "https://images.unsplash.com/photo-1759701827831-12bd95f1f0ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxoYXBweSUyMGRvZyUyMG93bmVyJTIwdXJiYW4lMjBwYXJrfGVufDB8fHx8MTc3NDAxNjg2N3ww&ixlib=rb-4.1.0&q=85",
+      "happy_owner_park": "https://images.pexels.com/photos/5255557/pexels-photo-5255557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "calm_dog_sleeping": "https://images.unsplash.com/photo-1771598467068-d8611d1348cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxjYWxtJTIwZG9nJTIwc2xlZXBpbmclMjBob21lfGVufDB8fHx8MTc3NDAxNjg2OXww&ixlib=rb-4.1.0&q=85",
+      "calm_dog_home": "https://images.pexels.com/photos/5420821/pexels-photo-5420821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "dog_corgi": "https://images.unsplash.com/photo-1765934984426-7fddc4153998?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGRvZyUyMG93bmVyJTIwdXJiYW4lMjBwYXJrfGVufDB8fHx8MTc3NDAxNjg2N3ww&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Rounded caps."
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALLATION: Run 'yarn add lucide-react clsx tailwind-merge framer-motion date-fns recharts react-day-picker' immediately.",
+    "THEME SETUP: Update tailwind.config.js to include the custom colors (brand-primary, brand-secondary, etc.) and fonts.",
+    "FONTS: Import 'Manrope' and 'Inter' from Google Fonts in index.css.",
+    "LAYOUT: Create a responsive 'Shell' component that handles the Mobile Bottom Nav vs Desktop Top Nav logic.",
+    "LOGGING FLOW: This is the core MVP feature. It must be FAST. Use large tappable 'Mood Cards' instead of dropdowns. Avoid standard form fatigue.",
+    "INSIGHTS: Use simple LineCharts (Recharts) for trends. Don't overcomplicate the data viz. Keep it 'glanceable'.",
+    "TONE: Ensure all copy is reassuring. 'You're doing great', 'Here is this week's summary'.",
+    "TESTING: Add data-testid to every interactive element (buttons, inputs, cards)."
+  ],
+  "universal_guidelines": [
+    "Do not use dark colors as gradients.",
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include data-testid attribute.",
+    "Use sonner for toasts.",
+    "Components MUST use named exports."
+  ]
+}

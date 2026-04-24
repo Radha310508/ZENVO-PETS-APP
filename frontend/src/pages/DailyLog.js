@@ -6,7 +6,7 @@ import { toast } from 'sonner';
 import { format } from 'date-fns';
 import { motion } from 'framer-motion';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://zenvo-pets-backend.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 const getAuthHeaders = () => ({

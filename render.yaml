@@ -3,7 +3,7 @@ services:
     name: zenvo-pets-frontend
     env: static
     buildCommand: cd frontend && npm install --legacy-peer-deps && npm run build
-    staticPublishPath: frontend/build
+    staticPublishPath: ./frontend/build
     routes:
       - type: rewrite
         source: /*
